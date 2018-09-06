@@ -1,1 +1,1 @@
-# https-dash.generalassemb.ly-ogunsolahabib-build-your-own-personal-website
+This repository contains all projects from http://dash.generalassemb.ly
