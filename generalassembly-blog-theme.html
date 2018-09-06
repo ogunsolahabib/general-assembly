@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <title>Habib's Blog</title>
+  <style>
+    body{
+      background:#444;
+      }
+    header {
+      text-align: center;
+      background: url('http://www.bylewis.co.uk/wp-content/uploads/2017/10/Linen-Room.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      text-transform: uppercase;
+    }
+    img {
+      height:150px;
+      margin: 40px 0px 0px 0px;
+      border: 7px double white;
+      border-radius: 79px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      
+    }
+    a{
+      color:#e0a458;
+      text-decoration:none;
+      transition: all 0.5s ease;
+      font-family:Verdana;
+      }
+    li a:hover{
+      border-top: 1px solid #e0a458;
+      padding: 2px;
+      color:#e0a458;
+      }
+    h2{
+      text-align:center;
+      color:white;
+      text-transform:uppercase;
+      }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      border:4px solid #e0a458;
+      border-radius:15px;
+      margin-bottom: 20px;
+    
+    }
+    .posts{
+      background:#444;
+    color:white}
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent-los2-1.cdninstagram.com/vp/877e7bdefce5702a2761e84d41934197/5C2BC297/t51.2885-19/s150x150/30915341_221130035317805_808005870909652992_n.jpg">
+    <h1>Habib's Blog</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">About Me</a></li>
+    </ul>
+  </header>
+  <h2>Top Posts</h2>
+  <div class="posts">
+  <article>
+    <h2>VHS umami pop-up trust fund</h2>
+    <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+    <button id="like">Like</button>
+  </article>
+  <article>
+    <h2>Sartorial synth Echo Park, roof party</h2>
+    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
+    <button id="like">Like</button>
+  </article>
+  <article>
+    <h2>Forage food truck keytar master cleanse</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button id="like">Like</button>
+  </article>
+  </div>
+  <script>
+    $("button").on("click", function() {
+      document.getElementById("like").innerHTML="Liked";
+    });
+  </script>
+</body>
